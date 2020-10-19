@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai2",
+            "request": "launch",
+            "mainClass": "bai2",
+            "projectName": "HTML CSS_a0a57240"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
