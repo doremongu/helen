@@ -206,7 +206,7 @@ header h2 {
 }
 
 .contentinfo {
-    background-image: url(koi.jpg), url(contours-opaque.png), url(gridlines-opaque.png);
+    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(koi.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
