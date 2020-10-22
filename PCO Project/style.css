@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,21 +13,23 @@ header {
     text-align: center;
     background-image: url(gridlines-opaque.png), url(contours-opaque.png), url(huntington.jpg), url(koi.jpg);
     display: flex;
-}
-
-header img {
-    padding: 100px;
-    width: 150px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-name {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 header h1 {
-    font-family: 'Julius Sans Ones', sans-serif;
     font-weight: 100;
     color: #fff;
     font-family: 'Indie Flower', cursive;
@@ -118,7 +121,7 @@ header h2 {
 }
 
 .participation p {
-    padding: 10px 70px 0px 10px;
+    padding: 10px 70px 0 10px;
     font-family: 'Indie Flower', cursive;
     font-size: 18px;
 }
@@ -146,9 +149,9 @@ header h2 {
     justify-content: center;
     margin: 0 auto;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 24px;
     width: 20%;
-    padding-left: 20px;
+    padding: 100px 0 0 20px;
 }
 
 .benefits {
@@ -169,15 +172,26 @@ header h2 {
     line-height: 2;
     text-align: justify;
     font-family: 'Indie Flower', cursive;
+    font-size: 18px;
 }
 
 
 /* Style for requirements */
 
+.container2 {
+    display: flex;
+}
+
 .requirements {
     padding: 40px;
     text-align: justify;
-    background-color: #f5f6fa;
+    width: 80%;
+}
+
+.right-side {
+    width: 20%;
+    background-color: #c0cac3;
+    padding: 50px;
 }
 
 .requirements h3 {
@@ -189,7 +203,7 @@ header h2 {
 
 .requirements p {
     line-height: 2;
-    padding: 10px 370px 0 10px;
+    margin: 10px;
     font-size: 18px;
     font-family: 'Indie Flower', cursive;
 }
@@ -205,12 +219,16 @@ header h2 {
     border-bottom: 1px #0d8ba1 solid;
 }
 
+
+/* Style for contentinfo */
+
 .contentinfo {
     background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(koi.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 240px;
+    width: 100%;
 }
 
 .contentinfo a {
@@ -259,7 +277,7 @@ footer {
 
 .icon {
     padding: 0;
-    font-size: 500%;
+    font-size: 400%;
     text-align: center;
 }
 
@@ -273,9 +291,9 @@ footer {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    line-height: 100px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    line-height: 100px;
 }
 
 .icon i:hover {
